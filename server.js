@@ -2,13 +2,12 @@ const http = require('http');
 const errorHeadle = require('./errorHeadle');
 const { v4: uuidv4 } = require('uuid');
 //uuidv4(); 
-/*
-重點單字 require('http');
-writeHead
-*/
+//require('http');
+//writeHead
+
 const todos = [];
 
-const reqList = (req, res) =>{
+const requestListenner = (req, res) =>{
   const headers = { 
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With',
     'Access-Control-Allow-Origin': '*',
@@ -114,5 +113,5 @@ const reqList = (req, res) =>{
   }
 }
 
-const server = http.createServer(reqList);
+const server = http.createServer(requestListenner);
 server.listen( process.env.PORT || 3005);
