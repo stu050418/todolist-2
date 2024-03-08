@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "homepage": "https://github.com/stu050418/todolist-2#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "uuid": "^9.0.1"
   },
