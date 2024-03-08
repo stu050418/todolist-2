@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "656283a2-02a5-4f40-b60e-126c0750ffff",
+		"name": "todolist2-練習",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33214831"
+	},
+	"item": [
+		{
+			"name": "取得所有資料",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-2-mp8o.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-2-mp8o",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-2-mp8o.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-2-mp8o",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增資料",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天5555要刷牙\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-2-mp8o.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-2-mp8o",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆資料",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-2-mp8o.onrender.com/todos/cefb2062-a7b3-420b-9ce9-ee1ebd0e9dfe",
+					"protocol": "https",
+					"host": [
+						"todolist-2-mp8o",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"cefb2062-a7b3-420b-9ce9-ee1ebd0e9dfe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-2-mp8o.onrender.com/todos/cefb2062-a7b3-420b-9ce9-ee1ebd0e9dfe",
+					"protocol": "https",
+					"host": [
+						"todolist-2-mp8o",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"cefb2062-a7b3-420b-9ce9-ee1ebd0e9dfe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
